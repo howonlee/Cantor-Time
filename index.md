@@ -29,3 +29,5 @@ Consequences
 ====
 
 Impact: this is how people should do estimations. Also good reason to not do estimations at all, just keep track of the doublings and make the exponent smaller
+
+Maybe you could play find-and-predict-the-hole-size, having found the exponent, fractal dimension, etc of the actual real error cantor set
