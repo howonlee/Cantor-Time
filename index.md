@@ -12,6 +12,9 @@ Two significant patterns in the temporal structure of data were noted by Mandelb
 
 That sounds totally obvious, a bunch of baloney, but it is important to note that noticing these processes make it impossible to say that the temporal process you're talking about can be modelled with a normally distributed random walk. There's spiffy tools that Van Ness and Mandelbrot propose to try to get ahold of this problem.
 
+Cantor Sets and Power Laws
+====
+
 Another pattern in time noted by Mandelbrot is the patterning of noise in information. To Mandelbrot, noise was patterned like a Cantor set: errors are inevitable and do not go away with enough data, because the process by which the errors occur scale with the size of the temporal interval that you're looking at.
 
 There is, implicitly held in many cases, an assumption of normality in the scheduling of production processes. That is, it is assumed that with some dilligent effort and enough (lots! lots more!) estimation, estimates will veer closer to the truth. But it is also admitted at the same time that errors abound which scale to the size of the temporal interval you're estimating at.
@@ -21,3 +24,8 @@ We might think of another model for the timing of design work, wars, and other p
 Here is a power law of project sizes. Some cutoffs or wherever, gotta find a graph
 
 Many other possible explanations for a power law. Sandpile, infinite monkeys, stuff like that. Why cantor law? Delays accumulate, gains don't. Other stuff.
+
+Consequences
+====
+
+Impact: this is how people should do estimations. Also good reason to not do estimations at all, just keep track of the doublings and make the exponent smaller
