@@ -10,7 +10,7 @@ Introduction
 
 There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler). I think some ideas from B. Mandelbrot's work can shed some light on why and how these huge failures in time forecasting occur.
 
-(table indicating huge failures in software project estimation)
+![Standish Chaos report table](./standish.gif)
 
 One possible way to model these projects is as a temporal stochastic process. Temporal, because we are thinking about the time aspects of these phenomena, and stochastic because although the outcomes of these projects may be deterministic (or not, depending), they are so complicated that we are tempted to ignore the structure and say that progress in the project is stochastic. So we think of temporal stochatic processes, which meander from having nothing done (0) to having the project done as it will be (1). The actual lengths of the intervals both don't and do matter, as we will see, but it is most important to think of the shape and structure of the progression from being not done to being done.
 
