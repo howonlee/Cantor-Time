@@ -4,8 +4,6 @@ Cantor Time
 Introduction
 ---
 
-(more rigorous math, honest, maybe with a worked Github example)
-
 (quote indicating WW I will be over by Christmas)
 
 There are areas of life where systematic and huge failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler). I think some ideas from B. Mandelbrot's work can shed some light on why and how these huge failures in time forecasting occur.
@@ -39,9 +37,11 @@ We might think of another model for the timing of design work, wars, and other p
 
 (picture of devil's staircase)
 
+Note that the devil's staircase encompasses the idea that delays accumulate in jumps.
+
 (graph of power law of project sizes)
 
-(moaaaar math mooaaar math go through github)
+(put the github analysis here)
 
 Other Explanations
 ====
@@ -63,6 +63,4 @@ Consequences
 
 The models which I have mentioned are all models, and therefore all convenient lies. They should not really be said to have a reality, but merely a usefulness. However, they seem useful to me in this domain. The only previous connection this strange class of models which involve power laws has had with software projects is in the Pareto principle, which states that 80% of the effect is caused by 20% of the cause.
 
-Different points of view towards estimation are engendered by taking on any of these models (that is their point). Keep track of the speed of the doublings of things, says a Cantor dust model of progression in software projects, because the structure of the progress made is invariant with respect to scale. You might be able to play find-the-productivity-gap-size. You might take power law statistics instead of normal people ones.
-
-(more impacts)
+Although it is probably the case that this essay will seem more useful than it is, if you choose to adopt a fractal time model for your scheduling, there are things to keep in mind. Different points of view towards estimation are engendered by taking on any of these models (that is their point). Keep track of the speed of the doublings of things, says a Cantor dust model of progression in software projects, because the structure of the progress made is invariant with respect to scale. You might be able to play find-the-productivity-gap-size. You might take power law statistics instead of normal people ones.
