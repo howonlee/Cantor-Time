@@ -8,7 +8,9 @@ Introduction
 >
 >_Kaiser Wilheim II of Germany, August 1914. The war went on for four years._
 
-There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler). I think some ideas from B. Mandelbrot's work can shed some light on why and how these huge failures in time forecasting occur.
+There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler).
+
+People have thought a lot about why these huge failures in time forecasting occur. But I think some thought should also be given to _how_ these huge failures occurr: that is, the geometry and structure of the project that is fucking up. I think some ideas from Mandelbrot's work can shed some light on that structure.
 
 ![Standish Chaos report table](./standish.gif)
 
@@ -22,11 +24,11 @@ Another model we can think about is a normally distributed random walk in 1-dime
 
 (picture of normal random walk)
 
-Back out to a higher level of abstraction. Two significant patterns in the temporal structure of data were noted by Mandelbrot: the Noah Effect, which says that sudden discontinuous changes (grand floods) can occur in a lot of temporal processes, and the Joseph Effect, where temporal processes are stable for a while, but then are not. That sounds totally obvious, a bunch of baloney, but it is important to note that noticing these processes in action make it impossible to say that the temporal process you're talking about can be modelled with a normally distributed random walk (why?).
+Back out to a higher level of abstraction. Two significant patterns in the temporal structure of data were noted by Mandelbrot: the Noah Effect, which says that sudden discontinuous changes (grand floods) can occur in a lot of temporal processes, and the Joseph Effect, where temporal processes are stable for a while, but then are not. That sounds totally obvious, a bunch of baloney, but it is important to note that noticing these processes in action make it impossible to say that the temporal process you're talking about can be modelled with a normally distributed random walk (why?). These two effects are a distillation of the also-trivial statement, that it is not true that projects necessarily progress in a linear, smooth fashion.
 
 These two effects seem omnipresent in software project work.
 
-(examples here)
+(examples here, probably from Death March)
 
 Cantor Sets and Power Laws
 ====
@@ -50,11 +52,11 @@ Other Explanations
 
 This essay only really thinks about one explanation for the power law phenomenon, but if you're not someone like Per Bak, you may admit of many possible sources of power law phenomena. Many of these sources have analogues to this problem, stated this way, and they might also have give some insight into the problem.
 
-Diffusion-limited aggregation, where the Matthew Effect ("For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken even that which he hath") dominates. It's much harder to shoe-horn these processes into a temporal framework, but the phenomena and especially the Matthew effect has to be mentioned, since it seems to happen a lot in software projects.
+Diffusion-limited aggregation is characteristic of processes where the Matthew Effect ("For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken even that which he hath") dominates. It's much harder to shoe-horn these processes into a temporal framework, but the phenomena and especially the Matthew effect has to be mentioned, since it seems to happen a lot in software projects. Delays grow longer because they are long. Much procrastination works like this: the stress that procrastination brings you causes you to procrastinate more. But if you don't have the stress that procrastination brings you, then you can get more done.
 
-It seems to me that this is closely related to R. Gabriel's "New Jersey Style", or "Worse is Better", the phenomena that less functionality is a preferable option to more fiddling. There is also the obvious parallel to much marketing thinking.
-
-(example)
+>If you want something done, ask a busy person.
+>
+>Ben Franklin, _Pearls of Wisdom_
 
 One phenomenon which is fundamentally non-geometric and non-temporal which should also be mentioned (diffusion-limited aggregation was originally invented to explain the geometry of cracking things, lightning and other such figures) which nevertheless comes with an associated power law is the monkeys-typing-randomly model. This is associated quite a bit with linguistic models. If you have a language with _N_ letters and a space bar, where a space separates words and the space is hit with probability _p_, and all the other letters are hit with probability _(1 - p)/N_, the rank-frequency distribution of words follows a power law. That is, a one-letter word is way more frequent than a two-letter word, which is way more frequent than a three-letter one. Many people talk about design languages, and design patterns.
 
