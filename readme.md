@@ -4,9 +4,11 @@ Cantor Time
 Introduction
 ---
 
-(quote indicating WW I will be over by Christmas)
+>"You will be home before the leaves fall from the trees."
+>
+>_Kaiser Wilheim II of Germany, August 1914. The war went on for four years._
 
-There are areas of life where systematic and huge failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler). I think some ideas from B. Mandelbrot's work can shed some light on why and how these huge failures in time forecasting occur.
+There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler). I think some ideas from B. Mandelbrot's work can shed some light on why and how these huge failures in time forecasting occur.
 
 (table indicating huge failures in software project estimation)
 
