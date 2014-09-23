@@ -22,7 +22,7 @@ The naive model in some people's heads is that of uniform progression towards th
 
 Another model we can think about is a normally distributed random walk in 1-dimensional space, which is prevented from going back down because reasons.
 
-(picture of normal random walk)
+![Meh model](./stepped_normal_fig.png)
 
 Back out to a higher level of abstraction. Two significant patterns in the temporal structure of data were noted by Mandelbrot: the Noah Effect, which says that sudden discontinuous changes (grand floods) can occur in a lot of temporal processes, and the Joseph Effect, where temporal processes are stable for a while, but then are not. That sounds totally obvious, a bunch of baloney, but it is important to note that noticing these processes in action make it impossible to say that the temporal process you're talking about can be modelled with a normally distributed random walk (why?). These two effects are a distillation of the also-trivial statement, that it is not true that projects necessarily progress in a linear, smooth fashion.
 
@@ -39,7 +39,7 @@ There is, implicitly held in many cases, an assumption of normality in the sched
 
 We might think of another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things. We would take it from Mandelbrot's cantor set construction. You couldn't find out which scale you were on specifically, and you would give up: instead, you would figure out how many doublings of time, or triplings, or what have you, you were going to go through, and try to make your predictions in a power law space instead.
 
-(picture of devil's staircase)
+(picture of devil's staircase model)
 
 Note that the devil's staircase encompasses the idea that delays accumulate in jumps.
 
