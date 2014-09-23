@@ -8,7 +8,7 @@ Introduction
 >
 >_Kaiser Wilheim II of Germany, August 1914. The war went on for four years._
 
-There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects (a programmer designs software: it is the computer that builds it, unless you're writing assembler).
+There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects.
 
 People have thought a lot about why these huge failures in time forecasting occur. But I think some thought should also be given to _how_ these huge failures occurr: that is, the geometry and structure of the project that is fucking up. I think some ideas from Mandelbrot's work can shed some light on that structure.
 
@@ -18,7 +18,7 @@ One possible way to model these projects is as a temporal stochastic process. Te
 
 The naive model in some people's heads is that of uniform progression towards the goal. Let's agree that this is idiocy and not talk about it anymore.
 
-(graph of naive model)
+![Bullcrap model](./bs_fig.png)
 
 Another model we can think about is a normally distributed random walk in 1-dimensional space, which is prevented from going back down because reasons.
 
