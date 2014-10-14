@@ -47,6 +47,8 @@ There is, implicitly held in many cases, an assumption of normality in the sched
 
 We might think of another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things. We would take it from Mandelbrot's cantor set construction. You couldn't find out which scale you were on specifically, and you would give up: instead, you would figure out how many doublings of time, or triplings, or what have you, you were going to go through, and try to make your predictions in a power law space instead.
 
+////////////////////////////////////////// general characteristics of power laws
+
 (picture of devil's staircase model)
 
 Note that the devil's staircase encompasses the idea that delays accumulate in jumps.
@@ -83,4 +85,4 @@ Although it is probably the case that this essay will seem more useful than it i
 Short Conclusion
 =====
 
-There is no normal time for a software project. The iniquitous practice of software project estimation, therefore, should be ceased.
+There is no normal time for a software project.
