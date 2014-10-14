@@ -1,4 +1,4 @@
-Cantor Time
+Petersburg-Cantor Time
 =====
 
 Introduction
@@ -8,11 +8,19 @@ Introduction
 >
 >_Kaiser Wilheim II of Germany, August 1914. The war went on for four years._
 
-There are areas of life where systematic and huge, but unpredicted failures in time forecasting occur. They seem to mostly be event-based progressions which do not occur in predictable fashions. The length of revolutions and wars, the length of software and other design projects, the time it takes to make a thing by hand, and so on. The thing which is of most interest to me is software project estimation, which is properly a subset of design projects.
+People have thought a lot about why huge failures in time forecasting occur. But I think some thought should also be given to _how_ these huge failures occurr: that is, the geometry and structure of the project that is fucking up. I think some ideas from Mandelbrot's work can shed some light on that structure, because this allows us to think with principled thoughts about the mean time for software projects.
 
-People have thought a lot about why these huge failures in time forecasting occur. But I think some thought should also be given to _how_ these huge failures occurr: that is, the geometry and structure of the project that is fucking up. I think some ideas from Mandelbrot's work can shed some light on that structure.
+What is the mean time? Infinite.
+
+What?
+----
+
+///////////////////////////////////////////////////// St. Petersburg paradox
 
 ![Standish Chaos report table](./standish.gif)
+
+Models We Have In Our Heads
+-----
 
 One possible way to model these projects is as a temporal stochastic process. Temporal, because we are thinking about the time aspects of these phenomena, and stochastic because although the outcomes of these projects may be deterministic (or not, depending), they are so complicated that we are tempted to ignore the structure and say that progress in the project is stochastic. So we think of temporal stochatic processes, which meander from having nothing done (0) to having the project done as it will be (1). The actual lengths of the intervals both don't and do matter, as we will see, but it is most important to think of the shape and structure of the progression from being not done to being done.
 
@@ -47,12 +55,15 @@ Note that the devil's staircase encompasses the idea that delays accumulate in j
 
 (put the github analysis here)
 
+/////////////////////////////////// Levy distributions, note how variance is infinite also
+////////////////////////////////// argue really hard about fat tails in delays, put down some tughts
+
 Other Explanations
 ====
 
-This essay only really thinks about one explanation for the power law phenomenon, but if you're not someone like Per Bak, you may admit of many possible sources of power law phenomena. Many of these sources have analogues to this problem, stated this way, and they might also have give some insight into the problem.
+This essay only really thinks about one explanation for the power law phenomenon, but if you're not someone like Per Bak, you may admit of many possible sources of this power law phenomenon of software project times. Many of these sources have analogues to this problem, stated this way, and they might also have give some insight into the problem.
 
-Diffusion-limited aggregation is characteristic of processes where the Matthew Effect ("For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken even that which he hath") dominates. It's much harder to shoe-horn these processes into a temporal framework, but the phenomena and especially the Matthew effect has to be mentioned, since it seems to happen a lot in software projects. Delays grow longer because they are long. Much procrastination works like this: the stress that procrastination brings you causes you to procrastinate more. But if you don't have the stress that procrastination brings you, then you can get more done.
+Diffusion-limited aggregation is characteristic of processes where the Matthew Effect ("For unto every one that hath shall be given, and he shall have abundance: but from him that hath not shall be taken even that which he hath") dominates. It's much harder to shoe-horn these processes into a temporal framework, but the phenomena and especially the Matthew effect has to be mentioned, since it seems to happen a lot in software projects. Delays grow longer because they are long. Much procrastination works like this: the stress that procrastination brings you causes you to procrastinate more. But if you don't have the stress that delay brings you, then you can get more done.
 
 >If you want something done, ask a busy person.
 >
@@ -68,3 +79,8 @@ Consequences
 The models which I have mentioned are all models, and therefore all convenient lies. They should not really be said to have a reality, but merely a usefulness. However, they seem useful to me in this domain. The only previous connection this strange class of models which involve power laws has had with software projects is in the Pareto principle, which states that 80% of the effect is caused by 20% of the cause.
 
 Although it is probably the case that this essay will seem more useful than it is, if you choose to adopt a fractal time model for your scheduling, there are things to keep in mind. Different points of view towards estimation are engendered by taking on any of these models (that is their point). Keep track of the speed of the doublings of things, says a Cantor dust model of progression in software projects, because the structure of the progress made is invariant with respect to scale. You might be able to play find-the-productivity-gap-size. You might take power law statistics instead of normal people ones.
+
+Short Conclusion
+=====
+
+There is no normal time for a software project. The iniquitous practice of software project estimation, therefore, should be ceased.
