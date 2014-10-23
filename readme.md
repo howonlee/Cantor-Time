@@ -12,17 +12,17 @@ http://arxiv.org/pdf/1304.4590.pdf
 Introduction
 ---
 
-What should be the theoretical mean time of a software project? _Infinite._
+What is the variance of the expected time of a human endeavor of construction or creation, a project? _Infinite._ The reason why is that project times don't follow a well-behaved normal distribution, but a power law.
 
 >"You will be home before the leaves fall from the trees."
 >
 >_Kaiser Wilheim II of Germany, August 1914. The war went on for four years._
 
-People have thought a lot about why huge failures in time forecasting occur.
+People have thought a lot about why huge failures in time forecasting occur. There's no silver bullet for solving them, said Fred Brooks, as to why software is hard. 
 
-But I think some thought should also be given to _how_ these huge failures occur: that is, the geometry and structure of the project that is fucking up.
+But I think the beginning of the examination should be _how_ these huge failures occur: that is, the geometry and structure of the project that is fucking up.
 
-I think some ideas from B. Mandelbrot's work can shed some light on that structure, because this allows us to think with principled thoughts about the mean time for software projects.
+I think some ideas from B. Mandelbrot's work can shed some light on that structure.
 
 People have thought in this way before, but I'm not sure if it's been popularized among the greater programmer population.
 
@@ -33,63 +33,52 @@ Let's look at some data first. It's not infinite, but it's reaching well towards
 
 ![Standish Chaos report table](./standish.gif)
 
-suez canal, scottish parliament building, sydney opera house. print whole table. note power law distribution of table
-
-I'm going to mention a few mathematical examples that have a vague connection with the problem to put a picture in your head, and then slowly try to make them more clear.
-
-Infinite variance in stock markets. First predictive thought in economics. Mandelbrot's cotton prices.
-
-Two significant patterns in the temporal structure of data were noted by Mandelbrot: the Noah Effect, which says that sudden discontinuous changes (grand floods) can occur in a lot of temporal processes, and the Joseph Effect, where temporal processes are stable for a while, but then are not.
-
-That sounds totally obvious, a bunch of baloney, but it is important to note that noticing these processes in action make it impossible to say that the temporal process you're talking about can be modelled with a normally distributed random walk (why?).
-
-These two effects are a distillation of the also-trivial statement, that it is not true that projects necessarily progress in a linear, smooth fashion.
-
-One possible way to model these projects is as a temporal stochastic process.
-
-Temporal, because we are thinking about the time aspects of these phenomena, and stochastic because although the outcomes of these projects may be deterministic (or not, depending), they are so complicated that we are tempted to ignore the structure and say that progress in the project is stochastic.
-
-So we think of temporal stochatic processes, which meander from having nothing done (0) to having the project done as it will be (1).
-
-The actual lengths of the intervals both don't and do matter, as we will see, but it is most important to think of the shape and structure of the progression from being not done to being done.
-
-The naive model in some people's heads is that of uniform progression towards the goal. Let's agree that this is idiocy and not talk about it anymore.
-
-![Bullcrap model](./bs_fig.png)
-
-Another model we can think about is a normally distributed random walk in 1-dimensional space, which is prevented from going back down because reasons.
-
-![Meh model](./stepped_normal_fig.png)
-
-These two effects seem omnipresent in software project work.
-
-Another pattern in time noted by Mandelbrot is the patterning of noise in information.
-
-To Mandelbrot, noise in his telephone data was patterned like a Cantor set: errors are inevitable and do not go away with enough data, because the process by which the errors occur scale with the size of the temporal interval that you're looking at.
-
-There is, implicitly held in many cases, an assumption of normality in the scheduling of production processes.
-
-That is, it is assumed that with some dilligent effort and enough (lots! lots more!) estimation, estimates will veer closer to the truth.
-
-But it is also admitted at the same time that errors abound which scale to the size of the temporal interval you're estimating at.
-
-We might think of another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things.
-
-We would take it from Mandelbrot's cantor set construction.
-
-You couldn't find out which scale you were on specifically, and you would give up: instead, you would figure out how many doublings of time, or triplings, or what have you, you were going to go through, and try to make your predictions in a power law space instead.
-
-Power laws have a fat tail, and that's what you care about most in the land of f(x), not x.The time of things is f(x). That's what we are seeing in the cost overruns, a big fat tail.
-
-(picture of devil's staircase model)
-
-Note that the devil's staircase encompasses the idea that delays accumulate in jumps. (mention the critical path people).
-
-Talk about the MCMC kids, how they do sample from the posterior.
-
 (graph of power law of project sizes)
 
 (put the github analysis here)
+
+suez canal, scottish parliament building, sydney opera house. print whole table. note power law distribution of table
+
+Infinite variance in stock markets. First predictive thought in economics. Mandelbrot's cotton prices.
+
+Matthew effect. Herbert Simon said preferential attachment. Note how this accords exactly with Brook's Law: adding programmers to a late programming project makes it later.
+
+A Pretty Mental Model
+-----------
+
+The naive model in some people's heads of software projects is that of uniform progression towards the goal. Let's agree that this is idiocy and not talk about it anymore.
+
+![Bullcrap model](./bs_fig.png)
+
+Another model we can think about is a one-tailed (people are, to a first approximation, never early) normally distributed random walk in 1-dimensional space. That means that there are things in there, but there are no radical explosions. There is, implicitly held in many cases, an assumption of normality in the scheduling of production processes.
+
+It is assumed that with some dilligent effort and enough (lots! lots more!) estimation, estimates will veer closer to the truth. That's the great central limit theorem.
+
+![Meh model](./stepped_normal_fig.png)
+
+This is wrong for a different reason. Central limit theorem can't hold, it's not IID. It's not even a martingale, there's strong long-range correlations. What happens if you decide at the start of a web app project to use APL? Your foolishness will affect every aspect of the entire project.
+
+More concretely, here's an example of a single, specific thing that fucked up a project (from Soul of a New Machine, probably) (maybe that guy who got writer's block for 30 years)
+
+Another pattern in time, however, which isn't normal, noted by Mandelbrot is the patterning of noise in information.
+
+Describe Mandelbrot's encounter with the telephone error data.
+
+But it is also admitted at the same time that errors abound which scale to the size of the temporal interval you're estimating at.
+
+To Mandelbrot, noise in his telephone data was patterned like a Cantor set: errors are inevitable and do not go away with enough data, because the process by which the errors occur scale with the size of the temporal interval that you're looking at.
+
+(picture of devil's staircase model)
+
+We might think of this as another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things. Delays accumulate in jumps. (mention the critical path people).
+
+Imagine you were on this devil's staircase. You couldn't find out which scale you were on specifically, and you would give up. More specifically, talking about progress is very meaningless, just like actual progress bars.
+
+Instead, you would figure out how many doublings of time, or triplings, or what have you, you were going to go through, and try to make your predictions in a power law space instead.
+
+Why does this phenomenon happen? Power laws have a fat tail, and that's what you care about most in the land of f(x), not x. The time of things is f(x). That's what we are seeing in the cost overruns, a big fat tail.
+
+Talk about the MCMC kids, how they do sample from the posterior.
 
 Consequences
 ====
@@ -110,7 +99,7 @@ Keep track of the speed of the doublings of things, says a Cantor dust model of 
 
 You might be able to play find-the-productivity-gap-size. You might take power law statistics instead of normal people ones.
  
-The practice of estimating their time periods should be discontinued, as estimates in a distribution such as the one that governs software projects have no meaning. Perhaps a Kolmogorov-Smirnoff estimate which cleaves to previous data that exists about software projects is best.
+The practice of estimating their time periods should be discontinued, as estimates in a distribution such as the one that governs software projects have no meaning. Perhaps a Kolmogorov-Smirnoff estimate which cleaves to previous data that exists about software projects is best. Just a mention of the differential models, many other models that exist that are compatible with this fact.
 
 Short Conclusion
 =====
