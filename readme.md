@@ -35,7 +35,7 @@ Let's look at some data first. It's not infinite, but it's reaching well towards
 
 (graph of power law of project sizes)
 
-(put the github analysis here)
+(put the github analysis here: can you do an exegesis in only like a paragraph, and a moral?)
 
 suez canal, scottish parliament building, sydney opera house. print whole table. note power law distribution of table
 
@@ -78,28 +78,27 @@ Instead, you would figure out how many doublings of time, or triplings, or what 
 
 Why does this phenomenon happen? Power laws have a fat tail, and that's what you care about most in the land of f(x), not x. The time of things is f(x). That's what we are seeing in the cost overruns, a big fat tail.
 
-Talk about the MCMC kids, how they do sample from the posterior.
+Talk about the MCMC kids, how they do sample from the posterior. They also actually assume normality a lot of the time, but sometimes they don't. It's possible to get it right there, at least.
 
-Consequences
+Caveats
 ====
 
-The models which I have mentioned are all models, and therefore all convenient lies.
+I've only talked about the _shape_ of software projects. Power laws, presumably, have generating stochastic processes. There's a lot of them. Different points of view towards estimation are engendered by taking on any of the possible sources of models (that is their point).
 
-They should not really be said to have a reality, but merely a usefulness.
+The only previous connection this strange class of models which involve power laws has had with software projects is in the Pareto principle, which states that 80% of the effect is caused by 20% of the cause. You see people call power law distributions Pareto distributions, in social science land.
 
-However, they seem useful to me in this domain.
+The models which I have mentioned are all models, and therefore all convenient lies. They should not really be said to have a reality, but merely a usefulness. However, they seem useful to me in this domain.
 
-The only previous connection this strange class of models which involve power laws has had with software projects is in the Pareto principle, which states that 80% of the effect is caused by 20% of the cause.
+Practical Steps
+=====
 
-Although it is probably the case that this essay will seem more useful than it is, if you choose to adopt a fractal time model for your scheduling, there are things to keep in mind.
+Although it is probably the case that this essay will seem more useful than it is, if you choose to adopt a fractal time model for your scheduling, there are things to keep in mind, from less technical to more technical. I'm not selling anything. Go use the existing easy statistical tools.
 
-Different points of view towards estimation are engendered by taking on any of these models (that is their point).
-
-Keep track of the speed of the doublings of things, says a Cantor dust model of progression in software projects, because the structure of the progress made is invariant with respect to scale.
-
-You might be able to play find-the-productivity-gap-size. You might take power law statistics instead of normal people ones.
+Keep track of the speed of the doublings of things, says a Cantor dust model of progression in software projects, because the structure of the progress made is invariant with respect to scale. You might take power law statistics instead of normal people ones.
  
-The practice of estimating their time periods should be discontinued, as estimates in a distribution such as the one that governs software projects have no meaning. Perhaps a Kolmogorov-Smirnoff estimate which cleaves to previous data that exists about software projects is best. Just a mention of the differential models, many other models that exist that are compatible with this fact.
+The practice of estimating their time periods should be discontinued, as estimates in a distribution such as the one that governs software projects have no meaning.
+
+Use a Kolmogorov-Smirnoff estimate which cleaves to previous data that exists about software projects is best. Just a mention of the differential models, many other models that exist that are compatible with this fact.
 
 Short Conclusion
 =====
