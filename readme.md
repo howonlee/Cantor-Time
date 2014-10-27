@@ -1,5 +1,6 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FEEEEEELINGS AND IDENTITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%what knowledge am I assuming, what am I eliding? think of this rigorously
 
 http://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think/
 http://eureka.bodleian.ox.ac.uk/4745/1/Budzier_and_Flyvbjerg.pdf
@@ -8,8 +9,15 @@ http://onlinelibrary.wiley.com/doi/10.1002/pmj.21409/full
 http://eight2late.wordpress.com/2008/03/04/on-the-inherent-uncertainty-of-project-tasks-estimates/
 http://arxiv.org/pdf/1304.4590.pdf 
 
+Thoughts on Project Time
+====
+
 Introduction
 ---
+
+>A monk asked Joshu, "Does a dog have a Buddha-nature or not?"
+>
+>He answered, "Mu."
 
 What is the variance of the expected time of a human endeavor of construction or creation, a project? _Infinite._ The reason why is that project times don't follow a well-behaved normal distribution, but a power law.
 
@@ -23,7 +31,7 @@ But I think the beginning of the examination should be _how_ these huge failures
 
 I think some ideas from B. Mandelbrot's work can shed some light on that structure.
 
-People have thought in this way before, but I'm not sure if it's been popularized among the greater programmer population.
+What is original in this article is not mine, and what is not mine is not original. I'm only trying to popularize the ideas that people have had previously about this.
 
 What?
 ----
@@ -101,4 +109,4 @@ Use a Kolmogorov-Smirnoff estimate which cleaves to previous data that exists ab
 
 Short Conclusion
 =====
-There is no normal time for a software project.
+There is no normal time for a software project. When your manager asks for an estimate, you can say what you'd like, but the answer in your head should be "Mu".
