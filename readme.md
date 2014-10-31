@@ -1,7 +1,4 @@
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%FEEEEEELINGS AND IDENTITY
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%what knowledge am I assuming, what am I eliding? think of this rigorously
-
 http://hbr.org/2011/09/why-your-it-project-may-be-riskier-than-you-think/
 http://eureka.bodleian.ox.ac.uk/4745/1/Budzier_and_Flyvbjerg.pdf
 http://onlinelibrary.wiley.com/doi/10.1002/pmj.21409/full
@@ -27,7 +24,7 @@ What is the variance of the expected time of a human endeavor of construction or
 
 People have thought a lot about why huge failures in time forecasting occur. There's no silver bullet for solving them, said Fred Brooks, as to why software is hard. 
 
-But I think the beginning of the examination should be _how_ these huge failures occur: that is, the geometry and structure of the project that is fucking up.
+But I would have it so that the beginning of how you think should be _how_ these huge failures occur: that is, the geometry and structure of the project that is fucking up.
 
 I think some ideas from B. Mandelbrot's work can shed some light on that structure.
 
@@ -77,7 +74,7 @@ To Mandelbrot, noise in his telephone data was patterned like a Cantor set: erro
 
 (picture of devil's staircase model)
 
-We might think of this as another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things. Delays accumulate in jumps. (mention the critical path people).
+We might think of this as another model for the timing of design work, wars, and other processes in which these events which have lots of the properties of electrical noise happen in time and invariant to the scale of things. Delays accumulate in jumps. This is the central idea behind the Critical Path: it's just a way to create a directed graph that represents the work that you do, and the interdependencies that the work requires.
 
 Imagine you were on this devil's staircase. You couldn't find out which scale you were on specifically, and you would give up. More specifically, talking about progress is very meaningless, just like actual progress bars.
 
